@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start head -->
+<head>
+    <meta charset="utf-8"/>
+    <title>Front-end</title>
+
+    <!-- SEO meta tags -->
+    <!-- <meta property="og:url" content="url" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="title" />
+        <meta property="og:description" content="description"/>
+        <meta property="og:image" content="url" />
+        <meta property="og:site_name" content="title" />
+        <meta name="twitter:card" content=summary />
+        <meta name="twitter:description" content="description"/>
+        <meta name="twitter:title" content="title" /> -->
+    <!--End SEO meta tags -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" href="img/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png"/>
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000"/>
+    <!-- Custom Browsers Color End -->
+
+
+    <style>
+        body {
+            opacity: 0;
+        }
+
+        .modal {
+            opacity: 0;
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .header nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+
+            /*header mega menu */
+            .header.header-mega-menu nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+        }
+    </style>
+<link href="main.css" rel="stylesheet"></head><!-- End head -->
+
+<!-- Body Modifications -->
+<!-- fixed header: header position: fixed -->
+
+<body class="">
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+
+        <!-- Start header -->
+        <header class="header">
+            <div class="container container--big">
+                <div class="header__row">
+                    <a href="sitemap.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <menu>
+                        <nav style="background-image: url(img/header-bg-min.png);">
+                            <ul>
+                                <li>
+                                    <a href="#introduction">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">Про нас</a>
+                                </li>
+                                <li>
+                                    <a href="news">Новини</a>
+                                </li>
+                                <li>
+                                    <a href="delivery.html">Оплата та доставка</a>
+                                </li>
+                                <li>
+                                    <a href="guarantee.html">Гарантія</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Контакти</a>
+                                </li>
+        
+                                <li class="goods-basket-wrap">
+                                    <a href="#">
+                                        <div class="goods-basket">
+                                            <svg>
+                                                <use xlink:href="#icon-basket"></use>
+                                            </svg>
+                                            <span>1</span>
+                                        </div>
+                                    </a>
+                                </li>
+        
+                                <li class="header-call hide-pc">
+                                    <a href="tel:+380676712131">
+                                        <svg>
+                                            <use xlink:href="#icon-phone"></use>
+                                        </svg>
+                                        <span>
+                                            067 671 21 31
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </menu>
+        
+                    <div class="header-controls">
+                        <div class="goods-basket">
+                            <a href="#" class="hide-pc">
+                                <svg>
+                                    <use xlink:href="#icon-basket"></use>
+                                </svg>
+                                <span>1</span>
+                            </a>
+                        </div>
+                        <div class="header-call">
+                            <a href="tel:+380676712131">
+                                <svg>
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>
+                                <span>
+                                    067 671 21 31
+                                </span>
+                            </a>
+                        </div>
+                        <div class="burger hidden-on-desktop">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>        <!-- End header -->
+
+        <!--Start page-->
+        <div class="page-wrapper page-home">
+
+            <!-- Start introduction -->
+            <!-- Start introduction section -->
+            <section class="section introduction ">
+                <div class="introduction__bg">
+                    <img class="intro-effects intro-effects-1" src="img/intro-effect-layеr-1-min.png"
+                        alt="">
+                    <img class="intro-effects intro-effects-2" src="img/intro-effect-layеr-2-min.png"
+                        alt="">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="img/intro-car-05-min.jpg">
+                        <img src="img/intro-car-min.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="container container--big">
+            
+                    <div class="introduction-inner">
+                        <div class="introduction__descr">
+                            <h1 class="title">
+                                Наявність постійного асортименту на складі компанії
+                            </h1>
+                            <div class="introduction__action">
+                                <a href="#" class="btn btn--cta">
+                                    <span>
+                                        Каталог
+                                    </span>
+                                </a>
+            
+                                <a href="#" class="btn btn--empty">
+                                    <span>
+                                        Консультація
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="introduction__picture">
+                            <img src="img/intro-goods-min.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End introduction section -->            <!-- End introduction -->
+
+            <!-- Start catalog -->
+            <section class="home-catalog">
+                <div class="slider-category-wrap">
+                    <div class="slider-prev">
+                        <svg>
+                            <use xlink:href="#icon-slider-arrow-prev"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-category">
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-car"></use>
+                            </svg>
+                        
+                            <p>
+                                Легкові автомобілі
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-truck"></use>
+                            </svg>
+                        
+                            <p>
+                                Грозові масла
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-automatic-transmission"></use>
+                            </svg>
+                        
+                            <p>
+                                АКПП
+                            </p>
+                        </a>
+                        </div>
+                       
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-manual-transmission"></use>
+                            </svg>
+                        
+                            <p>
+                                МКПП
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-chemicals"></use>
+                            </svg>
+                        
+                            <p>
+                                Автохімія, Автокосметика 
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-antifreeze"></use>
+                            </svg>
+                        
+                            <p>
+                                Антифриз
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-brake-fluid"></use>
+                            </svg>
+                        
+                            <p>
+                                Тормозна рідина
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-lubricating-grease"></use>
+                            </svg>
+                        
+                            <p>
+                                Пластичні смазки
+                            </p>
+                        </a>
+                        </div>
+                        <div  class="slider-category-item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#icon-catalog-lubricating-grease"></use>
+                            </svg>
+                        
+                            <p>
+                                Пластичні смазки
+                            </p>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="slider-next">
+                        <svg>
+                            <use xlink:href="#icon-slider-arrow-next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </section>            <!-- End catalog -->
+
+            <!-- Start home products -->
+            <section class="section--products">
+                <div class="container">
+                    <h2 class="section-title">Популярні товари</h2>
+            
+                    <div class="products">
+                        <div class="item"><div class="product">
+                <div class="product-img">
+                    <img src="img/product-1.jpg" alt="SWD Rheinol ATF Dexron III H">
+                    <img class="mirror" src="img/product-1.jpg" alt="Mirror SWD Rheinol ATF Dexron III H">
+                </div>
+            
+                <div class="product-content">
+                    <!-- Title and description -->
+                    <div class="product-info">
+                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
+                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
+                    </div>
+            
+                    <!-- To card and details page -->
+                    <div class="product-actions">
+                        <a class="btn btn--medium btn--lines"><span>Детальніше</span></a>
+                        <a class="btn btn--medium btn--icon"><svg><use xlink:href="#icon-basket"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+                        <div class="item"><div class="product">
+                <div class="product-img">
+                    <img src="img/product-2.jpeg" alt="SWD Rheinol ATF Dexron III H">
+                    <img class="mirror" src="img/product-2.jpeg" alt="Mirror SWD Rheinol ATF Dexron III H">
+                </div>
+            
+                <div class="product-content">
+                    <!-- Title and description -->
+                    <div class="product-info">
+                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
+                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
+                    </div>
+            
+                    <!-- To card and details page -->
+                    <div class="product-actions">
+                        <a class="btn btn--medium btn--lines"><span>Детальніше</span></a>
+                        <a class="btn btn--medium btn--icon"><svg><use xlink:href="#icon-basket"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+                        <div class="item"><div class="product">
+                <div class="product-img">
+                    <img src="img/product-1.jpg" alt="SWD Rheinol ATF Dexron III H">
+                    <img class="mirror" src="img/product-1.jpg" alt="Mirror SWD Rheinol ATF Dexron III H">
+                </div>
+            
+                <div class="product-content">
+                    <!-- Title and description -->
+                    <div class="product-info">
+                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
+                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
+                    </div>
+            
+                    <!-- To card and details page -->
+                    <div class="product-actions">
+                        <a class="btn btn--medium btn--lines"><span>Детальніше</span></a>
+                        <a class="btn btn--medium btn--icon"><svg><use xlink:href="#icon-basket"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+                        <div class="item"><div class="product">
+                <div class="product-img">
+                    <img src="img/product-2.jpeg" alt="SWD Rheinol ATF Dexron III H">
+                    <img class="mirror" src="img/product-2.jpeg" alt="Mirror SWD Rheinol ATF Dexron III H">
+                </div>
+            
+                <div class="product-content">
+                    <!-- Title and description -->
+                    <div class="product-info">
+                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
+                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
+                    </div>
+            
+                    <!-- To card and details page -->
+                    <div class="product-actions">
+                        <a class="btn btn--medium btn--lines"><span>Детальніше</span></a>
+                        <a class="btn btn--medium btn--icon"><svg><use xlink:href="#icon-basket"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+                        <div class="item"><div class="product">
+                <div class="product-img">
+                    <img src="img/product-1.jpg" alt="SWD Rheinol ATF Dexron III H">
+                    <img class="mirror" src="img/product-1.jpg" alt="Mirror SWD Rheinol ATF Dexron III H">
+                </div>
+            
+                <div class="product-content">
+                    <!-- Title and description -->
+                    <div class="product-info">
+                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
+                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
+                    </div>
+            
+                    <!-- To card and details page -->
+                    <div class="product-actions">
+                        <a class="btn btn--medium btn--lines"><span>Детальніше</span></a>
+                        <a class="btn btn--medium btn--icon"><svg><use xlink:href="#icon-basket"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+                        <div class="item"><div class="product">
+                <div class="product-img">
+                    <img src="img/product-2.jpeg" alt="SWD Rheinol ATF Dexron III H">
+                    <img class="mirror" src="img/product-2.jpeg" alt="Mirror SWD Rheinol ATF Dexron III H">
+                </div>
+            
+                <div class="product-content">
+                    <!-- Title and description -->
+                    <div class="product-info">
+                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
+                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
+                    </div>
+            
+                    <!-- To card and details page -->
+                    <div class="product-actions">
+                        <a class="btn btn--medium btn--lines"><span>Детальніше</span></a>
+                        <a class="btn btn--medium btn--icon"><svg><use xlink:href="#icon-basket"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End home products -->
+
+            <!-- Start call-to-action -->
+            <section class="section--call-to-action section--dark m-100">
+                <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
+                    <!-- Title and description -->
+                    <div class="call-to-action__description">
+                        <h2 class="section-title">Безкоштовна доставка:</h2>
+                        <div class="special-offer">
+                            клієнтам на суму більше <span class="offer">2000грн.</span><br>
+                            Доставка здійснюється перевізником Гюнсел.
+                        </div>
+                    </div>
+            
+                    <!-- Actions -->
+                    <div class="call-to-action__actions">
+                        <span class="special-text">Спеціальна пропозиція</span>
+                        <a href="#" class="special-link special-link--desktop">Каталог</a>
+                        <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
+                    </div>
+                </div>
+            </section>
+            <!-- End call-to-action -->
+
+            <!-- Start about -->
+            <section class="section--about section--dark">
+                <div class="container">
+                    <h2 class="section-title section-title--about">Про нас</h2>
+            
+                    <!-- Description -->
+                    <div class="about-description">
+                        <img class="about-description__bg" src="img/about-description-bg.jpg"
+                             alt="About description bg">
+            
+                        <div class="about-description__info">
+                            <h2 class="section-title">"ТРАК-ЛІДЕР" ВІТАЄ ВАС НА САЙТІ НАШОЇ КОМПАНІЇ</h2>
+            
+                            <p>
+                                молода компанія на ринку автозапчастин, і в той же час наші співробітники мають багаторічний
+                                досвід
+                                роботи в галузі постачання запчастин та сервісного обслуговування вантажних автомобілів. Ми
+                                пропонуємо співпрацю по забезпеченню Вашого бізнесу (перевезення, сервіс, торгівля) запасними
+                                частинами до вантажних автомобілів, причепів та напівпричепів європейського виробництва. Якщо Ви
+                                шукаєте оптимальні та виважені рішення для власного бізнесу, - ми завжди раді розпочати діалог і
+                                прийти до взаємозгоди.
+                            </p>
+            
+                            <p>
+                                Прямі контракти з виробниками дозволяють нам тримати вищезазначені фактори на отимальному рівні.
+                                Підтримуючи постійний діалог з нашими Клієнтами, ми вдосконалюєм наші взаємовідносини з метою
+                                створення довготривалого та взаємовигідного партнерства.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="about-advantages" style="background-image: url('img/about-bg.jpg')">
+                    <div class="container">
+                        <!-- Img -->
+                        <img class="about-img"
+                             src="img/truck-lider-white.png"
+                             srcset="img/truck-lider-white.png 1x, img/truck-lider-white@2x.png 2x"
+                             alt="Truck lider">
+            
+                        <!-- Advantages -->
+                        <ul class="advantages-list">
+                            <li>
+                                <svg><use xlink:href="#icon-about-assortment"></use></svg>
+                                <span>Широкий асортимент</span>
+                            </li>
+                            <li>
+                                <svg><use xlink:href="#icon-about-guarantee"></use></svg>
+                                <span>Гарантована якість</span>
+                            </li>
+                            <li>
+                                <svg><use xlink:href="#icon-about-price"></use></svg>
+                                <span>Приваблива ціна</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- End about -->
+
+            <!-- Start home news -->
+            <section class="section--home-news">
+                <div class="container">
+                    <h2 class="section-title">Новини</h2>
+            
+                    <div class="news">
+                        <div class="item"><div class="post">
+                <div class="post__img">
+                    <a href="#"><img src="img/post-1.png" alt="Post name"></a>
+                    <div class="post__date">17.02.2020</div>
+                </div>
+            
+                <h6 class="post__title">
+                    В ближайшее время продукты Swd Rheinol Primus GF 0W-20 / 5W-20 будут сняты с производства.
+                </h6>
+            
+                <a class="post__link" href="##"><span>Читати</span><svg><use xlink:href="#icon-arrow-long-right"></use></svg></a>
+            </div>
+            </div>
+                        <div class="item"><div class="post">
+                <div class="post__img">
+                    <a href="#"><img src="img/post-2.png" alt="Post name"></a>
+                    <div class="post__date">17.02.2020</div>
+                </div>
+            
+                <h6 class="post__title">
+                    В ближайшее время продукты Swd Rheinol Primus GF 0W-20 / 5W-20 будут сняты с производства.
+                </h6>
+            
+                <a class="post__link" href="##"><span>Читати</span><svg><use xlink:href="#icon-arrow-long-right"></use></svg></a>
+            </div>
+            </div>
+                        <div class="item"><div class="post">
+                <div class="post__img">
+                    <a href="#"><img src="img/post-3.png" alt="Post name"></a>
+                    <div class="post__date">17.02.2020</div>
+                </div>
+            
+                <h6 class="post__title">
+                    В ближайшее время продукты Swd Rheinol Primus GF 0W-20 / 5W-20 будут сняты с производства.
+                </h6>
+            
+                <a class="post__link" href="##"><span>Читати</span><svg><use xlink:href="#icon-arrow-long-right"></use></svg></a>
+            </div>
+            </div>
+                    </div>
+            
+                    <div class="load-more">
+                        <a href="###" class="btn btn--lines"><span>Більше новин</span></a>
+                    </div>
+                </div>
+            </section>
+            <!-- End home news -->
+        </div>
+        <!--End page-->
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <!-- Footer bg -->
+            <div class="footer__bg" style="background-image: url('img/footer-overlay.png')"></div>
+        
+            <!-- Content -->
+            <div class="container">
+                <!-- Footer email and phone info -->
+                <div class="footer__contacts">
+                    <div class="img">
+                        <img src="img/truck-lider-black.png"
+                             srcset="img/truck-lider-black.png 1x, img/truck-lider-black@2x.png 2x"
+                             alt="Truck lider">
+                    </div>
+        
+                    <div class="links">
+                        <div class="email">
+                            <a href="mailto:kushyna.a@gmail.com" class="btn btn--empty btn--empty--hover-color btn--icon">
+                                <svg>
+                                    <use xlink:href="#icon-mail"></use>
+                                </svg>
+                            </a>
+                            <a href="mailto:kushyna.a@gmail.com">
+                                <span>Kushyna.a@gmail.com</span>
+                            </a>
+                        </div>
+        
+                        <div class="phone">
+                            <a href="mailto:kushyna.a@gmail.com" class="btn btn--empty btn--empty--hover-color btn--icon">
+                                <svg>
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>
+                            </a>
+                            <a href="tel:+380665566555">
+                                <span>066 556 65 55</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer bottom social icons and copyright -->
+                <div class="footer__social">
+                    <ul class="socials">
+                        <li><a href="#"><svg><use xlink:href="#icon-social-skype"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="#icon-social-telegram"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="#icon-social-vider"></use></svg></a></li>
+                    </ul>
+                    <p class="copyright">© 2020 TRUCKLIDER</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+    </div>
+    <!-- End site wrapper -->
+<script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="svgsprite.js"></script></body>
+
+</html>
