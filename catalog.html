@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Front-end</title>
+
+    <!-- SEO meta tags -->
+    <!-- <meta property="og:url" content="url" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="title" />
+        <meta property="og:description" content="description"/>
+        <meta property="og:image" content="url" />
+        <meta property="og:site_name" content="title" />
+        <meta name="twitter:card" content=summary />
+        <meta name="twitter:description" content="description"/>
+        <meta name="twitter:title" content="title" /> -->
+    <!--End SEO meta tags -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+
+
+    <style>
+        body {
+            opacity: 0;
+        }
+
+        .modal {
+            opacity: 0;
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .select__list {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .header nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+
+            /*header mega menu */
+            .header.header-mega-menu nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+        }
+    </style>
+<link href="main.css" rel="stylesheet"></head><!-- End head -->
+
+<!-- Body Modifications -->
+<!-- fixed header: header position: fixed -->
+
+<body class="">
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+
+        <!-- Start header -->
+        <header class="header header--fill">
+            <div class="container container--big">
+                <div class="header__row">
+                    <a href="sitemap.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <menu>
+                        <nav style="background-image: url(img/header-bg-min.png);">
+                            <ul>
+                                <li>
+                                    <a href="#introduction">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">Про нас</a>
+                                </li>
+                                <li>
+                                    <a href="news">Новини</a>
+                                </li>
+                                <li>
+                                    <a href="delivery.html">Оплата та доставка</a>
+                                </li>
+                                <li>
+                                    <a href="guarantee.html">Гарантія</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Контакти</a>
+                                </li>
+        
+                                <li class="goods-basket-wrap">
+                                    <a href="#">
+                                        <div class="goods-basket">
+                                            <svg>
+                                                <use xlink:href="#icon-basket"></use>
+                                            </svg>
+                                            <span>1</span>
+                                        </div>
+                                    </a>
+                                </li>
+        
+                                <li class="header-call hide-pc">
+                                    <a href="tel:+380676712131">
+                                        <svg>
+                                            <use xlink:href="#icon-phone"></use>
+                                        </svg>
+                                        <span>
+                                            067 671 21 31
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </menu>
+        
+                    <div class="header-controls">
+                        <div class="goods-basket">
+                            <a href="#" class="hide-pc">
+                                <svg>
+                                    <use xlink:href="#icon-basket"></use>
+                                </svg>
+                                <span>1</span>
+                            </a>
+                        </div>
+                        <div class="header-call">
+                            <a href="tel:+380676712131">
+                                <svg>
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>
+                                <span>
+                                    067 671 21 31
+                                </span>
+                            </a>
+                        </div>
+                        <div class="burger hidden-on-desktop">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>        <!-- End header -->
+
+        <!--Start page-->
+        <div class="page-wrapper js-filter-close page-catalog">
+
+            <!-- Start aside-filter -->
+            <div class="aside-filter-wrap aside-filter--1200 js-filter">
+            
+                <div class="aside-filter ">
+            
+                    <div class="js-accordion accordion">
+                        <div class="accordion__title active">
+                            <span>
+                                Категорії
+                                <div class="accordion-arrow"></div>
+                            </span>
+                        </div>
+            
+                        <ul class="accordion__content">
+            
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-1-1">
+                                                            <label for="checkbox-1-1-1">Легкові автомобілі</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-1-2">
+                                                                <label for="checkbox-1-1-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-1-3">
+                                                                <label for="checkbox-1-1-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-1-4">
+                                                                <label for="checkbox-1-1-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+            
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-2-1">
+                                                            <label for="checkbox-1-2-1">Грозові масла</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-2-2">
+                                                                <label for="checkbox-1-2-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-2-3">
+                                                                <label for="checkbox-1-2-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-2-4">
+                                                                <label for="checkbox-1-2-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+            
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-3-1">
+                                                            <label for="checkbox-1-3-1">АКПП</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-3-2">
+                                                                <label for="checkbox-1-3-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-3-3">
+                                                                <label for="checkbox-1-3-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-3-4">
+                                                                <label for="checkbox-1-3-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-4-1">
+                                                            <label for="checkbox-1-4-1">МКПП</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-4-2">
+                                                                <label for="checkbox-1-4-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-4-3">
+                                                                <label for="checkbox-1-4-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-4-4">
+                                                                <label for="checkbox-1-4-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-5-1">
+                                                            <label for="checkbox-1-5-1">Автохімія, Автокосметика</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-5-2">
+                                                                <label for="checkbox-1-5-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-5-3">
+                                                                <label for="checkbox-1-5-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-5-4">
+                                                                <label for="checkbox-1-5-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-6-1">
+                                                            <label for="checkbox-1-6-1">Антифриз</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-6-2">
+                                                                <label for="checkbox-1-6-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-6-3">
+                                                                <label for="checkbox-1-6-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-6-4">
+                                                                <label for="checkbox-1-6-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-7-1">
+                                                            <label for="checkbox-1-7-1">Тормозна рідина</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-7-2">
+                                                                <label for="checkbox-1-7-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-7-3">
+                                                                <label for="checkbox-1-7-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-7-4">
+                                                                <label for="checkbox-1-7-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-8-1">
+                                                            <label for="checkbox-1-8-1">Пластичні смазки</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-8-2">
+                                                                <label for="checkbox-1-8-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-8-3">
+                                                                <label for="checkbox-1-8-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-8-4">
+                                                                <label for="checkbox-1-8-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-9-1">
+                                                            <label for="checkbox-1-9-1">Для 2х тактних двигунів мотоциклів і катерів</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-9-2">
+                                                                <label for="checkbox-1-9-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-9-3">
+                                                                <label for="checkbox-1-9-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-9-4">
+                                                                <label for="checkbox-1-9-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-10-1">
+                                                            <label for="checkbox-1-10-1">Для 4х тактних двигунів мотоциклів</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-10-2">
+                                                                <label for="checkbox-1-10-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-10-3">
+                                                                <label for="checkbox-1-10-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-10-4">
+                                                                <label for="checkbox-1-10-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                            <li>
+                                   <div class="accordion accordion-inner">
+                                
+                                                        <div class="filter-checkbox">
+                                                            <input type="checkbox" id="checkbox-1-11-1">
+                                                            <label for="checkbox-1-11-1">Для сельхоз техники</label>
+                                                            <div class="accordion-arrow"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="accordion-inner__content">
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-11-2">
+                                                                <label for="checkbox-1-11-2">Серия Synergie
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-11-3">
+                                                                <label for="checkbox-1-11-3">Серия Primus
+                                                                </label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="filter-checkbox">
+                                                                <input type="checkbox" id="checkbox-1-11-4">
+                                                                <label for="checkbox-1-11-4">Серия Primol</label>
+                                                            </div>
+                                
+                                                            <span>
+                                                                (1526)
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="js-accordion accordion">
+                        <div class="accordion__title">
+                            <span> Об’єм
+                                <div class="accordion-arrow"></div>
+                            </span>
+                        </div>
+            
+                        <ul class="accordion-inner__content">
+            
+                            <li>
+                                <div class="filter-checkbox">
+                                    <input type="checkbox" id="checkbox-3-1">
+                                    <label for="checkbox-3-1">1</label>
+                                </div>
+            
+                                <span>
+                                    (1526)
+                                </span>
+            
+                            </li>
+                            <li>
+                                <div class="filter-checkbox">
+                                    <input type="checkbox" id="checkbox-3-2">
+                                    <label for="checkbox-3-2">5</label>
+                                </div>
+            
+                                <span>
+                                    (1526)
+                                </span>
+            
+                            </li>
+                            <li>
+                                <div class="filter-checkbox">
+                                    <input type="checkbox" id="checkbox-3-3">
+                                    <label for="checkbox-3-3">20</label>
+                                </div>
+            
+                                <span>
+                                    (1526)
+                                </span>
+            
+                            </li>
+                            <li>
+                                <div class="filter-checkbox">
+                                    <input type="checkbox" id="checkbox-3-3">
+                                    <label for="checkbox-3-3">60</label>
+                                </div>
+            
+                                <span>
+                                    (1526)
+                                </span>
+            
+                            </li>
+                            <li>
+                                <div class="filter-checkbox">
+                                    <input type="checkbox" id="checkbox-3-3">
+                                    <label for="checkbox-3-3">200</label>
+                                </div>
+            
+                                <span>
+                                    (1526)
+                                </span>
+            
+                            </li>
+            
+                        </ul>
+                    </div>
+            
+                </div>
+                <div class="js-filter-btn"></div>
+            
+            </div>            <!-- End aside-filter -->
+
+            <div class="main">
+                <!-- Start selected filters list -->
+                <div class="selected-filters">
+                    <div class="selected-filters__title">
+                        <p>
+                            Фільтри:
+                        </p>
+                    </div>
+                
+                    <div class="selected-filters__remove-all "> <span class="filter-selected-cross filter-selected-cross--all"></span>
+                    </div>
+                
+                    <ul class="selected-filters__list">
+                       <!--  <li>
+                           <p> Серия Synergie </p><span class="filter-selected-cross"></span> 
+                        </li>-->
+                    </ul>
+                </div>                <!-- End selected filters list-->
+                <div class="catalog-head">
+                    <h2 class="title">
+                        Легкові автомобілі
+                    </h2>
+
+                    <div class="catalog-controls">
+                        <!-- Start selected filters list -->
+                        <div class="select">
+                            <div class="select__input">
+                                <input type="text" placeholder="За популярністю" name="goods-sort" id="goods-sort" readonly>
+                            </div>
+                            <ul class="select__list">
+                                <li class="select__option">акційні</li>
+                                <li class="select__option">2</li>
+                                <li class="select__option">3</li>
+                            </ul>
+                        </div>                        <!-- End selected filters list-->
+
+                        <!-- Start selected filters list -->
+                          <div class="s-controls" data-class="catalog-mod-table">
+                              <button class='js-store-remove '>
+                                  <svg>
+                                      <use xlink:href="#icon-mod-view-line"></use>
+                                  </svg>
+                              </button>
+                              <button class='js-store-add active'>
+                                  <svg>
+                                      <use xlink:href="#icon-mod-view-table"></use>
+                                  </svg>
+                              </button>
+                          </div>                        <!-- End selected filters list-->
+                    </div>
+                </div>
+                <div class="catalog catalog-mod-table">
+
+                </div>
+            </div>
+
+        </div>
+        <!--End page-->
+
+    </div>
+    <!-- End site wrapper -->
+<script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="svgsprite.js"></script></body>
+
+</html>

@@ -3,7 +3,7 @@
 
 <!-- Start head -->
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Front-end</title>
 
     <!-- SEO meta tags -->
@@ -18,16 +18,16 @@
         <meta name="twitter:title" content="title" /> -->
     <!--End SEO meta tags -->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Template Basic Images Start -->
-    <link rel="icon" href="img/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png"/>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
     <!-- Template Basic Images End -->
 
     <!-- Custom Browsers Color Start -->
-    <meta name="theme-color" content="#000"/>
+    <meta name="theme-color" content="#000" />
     <!-- Custom Browsers Color End -->
 
 
@@ -43,6 +43,11 @@
         .dropdown-menu {
             opacity: 0;
             visibility: hidden;
+        }
+
+        .select__list {
+            visibility: hidden;
+            opacity: 0;
         }
 
         @media screen and (max-width: 991px) {
@@ -69,7 +74,7 @@
     <div class="site-wrapper">
 
         <!-- Start header -->
-        <header class="header">
+        <header class="header ">
             <div class="container container--big">
                 <div class="header__row">
                     <a href="sitemap.html" class="logo">
@@ -481,21 +486,23 @@
 
             <!-- Start call-to-action -->
             <section class="section--call-to-action section--dark m-100">
-                <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
-                    <!-- Title and description -->
-                    <div class="call-to-action__description">
-                        <h2 class="section-title">Безкоштовна доставка:</h2>
-                        <div class="special-offer">
-                            клієнтам на суму більше <span class="offer">2000грн.</span><br>
-                            Доставка здійснюється перевізником Гюнсел.
+                <div class="container--fluid">
+                    <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
+                        <!-- Title and description -->
+                        <div class="call-to-action__description">
+                            <h2 class="section-title">Безкоштовна доставка:</h2>
+                            <div class="special-offer">
+                                клієнтам на суму більше <span class="offer">2000грн.</span><br>
+                                Доставка здійснюється перевізником Гюнсел.
+                            </div>
                         </div>
-                    </div>
             
-                    <!-- Actions -->
-                    <div class="call-to-action__actions">
-                        <span class="special-text">Спеціальна пропозиція</span>
-                        <a href="#" class="special-link special-link--desktop">Каталог</a>
-                        <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
+                        <!-- Actions -->
+                        <div class="call-to-action__actions">
+                            <span class="special-text">Спеціальна пропозиція</span>
+                            <a href="#" class="special-link special-link--desktop">Каталог</a>
+                            <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
+                        </div>
                     </div>
                 </div>
             </section>
