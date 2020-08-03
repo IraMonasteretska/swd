@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Front-end</title>
+
+    <!-- SEO meta tags -->
+    <!-- <meta property="og:url" content="url" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="title" />
+        <meta property="og:description" content="description"/>
+        <meta property="og:image" content="url" />
+        <meta property="og:site_name" content="title" />
+        <meta name="twitter:card" content=summary />
+        <meta name="twitter:description" content="description"/>
+        <meta name="twitter:title" content="title" /> -->
+    <!--End SEO meta tags -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" href="img/favicon2x-min.png" />
+    <link rel="favicon2x" sizes="32x32" href="img/favicon2x-min.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+
+
+    <style>
+        body {
+            opacity: 0;
+        }
+
+        .modal {
+            opacity: 0;
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .select__list {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .header nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+
+            /*header mega menu */
+            .header.header-mega-menu nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+        }
+    </style>
+<link href="main.css" rel="stylesheet"></head><!-- End head -->
+
+<!-- Body Modifications -->
+<!-- fixed header: header position: fixed -->
+
+<body class="">
+
+<!-- Start cart modal -->
+<div id="modal-cart" class="modal ">
+    <div class="modal__window">
+        <span class="modal__cross modal-close-js">
+            <svg><use xlink:href="#icon-x"></use></svg>
+        </span>
+
+
+        <div class="modal__content">
+            <div class="cart">
+                <div class="cart__products">
+                    <div class="cart__product">
+                        <a href="##" class="remove">
+                            <svg>
+                                <use xlink:href="#icon-x"></use>
+                            </svg>
+                        </a>
+            
+                        <div class="image">
+                            <img src="img/product-1.jpg" alt="product-1">
+                        </div>
+            
+                        <div class="info">
+                            <div class="title">SWD Rheinol ATF Dexron II D <br>1л</div>
+                            <div class="numbers">
+                                <div class="price skew skew--more"><span>300 грн</span></div>
+            
+                                <div class="count">
+                                    <a class="minus skew skew--more"><span>&ndash;</span></a>
+                                    <div class="current skew skew--more"><span>1</span></div>
+                                    <a class="plus skew skew--more"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="total">
+                            <span class="total-title">Сума</span>
+                            <span class="total-number">300 грн</span>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <a href="##" class="remove">
+                            <svg>
+                                <use xlink:href="#icon-x"></use>
+                            </svg>
+                        </a>
+            
+                        <div class="image">
+                            <img src="img/product-2.jpeg" alt="product-1">
+                        </div>
+            
+                        <div class="info">
+                            <div class="title">SWD Rheinol ATF Dexron II D</div>
+                            <div class="numbers">
+                                <div class="price skew skew--more"><span>300 грн</span></div>
+            
+                                <div class="count">
+                                    <a class="minus skew skew--more"><span>&ndash;</span></a>
+                                    <div class="current skew skew--more"><span>50</span></div>
+                                    <a class="plus skew skew--more"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="total">
+                            <span class="total-title">Сума</span>
+                            <span class="total-number">15 000 грн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button type="button" class="btn btn--medium btn--empty modal-close-js">
+                <span>Продовжити покупки</span>
+            </button>
+            <a href="#" class="btn btn--medium btn--lines"><span>Оформити замовлення</span></a>
+        </div>
+    </div>
+</div>
+
+<!-- Trigger example -->
+<!-- End cart modal -->
+
+<!-- Start site wrapper -->
+<div class="site-wrapper">
+
+    <!-- Start header -->
+    <header class="header header--fill">
+        <div class="container container--big">
+            <div class="header__row">
+                <a href="sitemap.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <menu>
+                    <nav style="background-image: url(img/header-bg-min.png);">
+                        <ul>
+                            <li>
+                                <a href="#introduction">Головна</a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="about.html">Про нас</a>
+                            </li>
+                            <li>
+                                <a href="news">Новини</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html">Оплата та доставка</a>
+                            </li>
+                            <li>
+                                <a href="guarantee.html">Гарантія</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Контакти</a>
+                            </li>
+    
+                            <li class="goods-basket-wrap">
+                                <a href="#modal-cart" class="modal-open-js">
+                                    <div class="goods-basket">
+                                        <svg>
+                                            <use xlink:href="#icon-basket"></use>
+                                        </svg>
+                                        <span>1</span>
+                                    </div>
+                                </a>
+                            </li>
+    
+                            <li class="header-call hide-pc">
+                                <a href="tel:+380676712131">
+                                    <svg>
+                                        <use xlink:href="#icon-phone"></use>
+                                    </svg>
+                                    <span>
+                                        067 671 21 31
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </menu>
+    
+                <div class="header-controls">
+                    <div class="goods-basket">
+                        <a href="#modal-cart" class="hide-pc modal-open-js">
+                            <svg>
+                                <use xlink:href="#icon-basket"></use>
+                            </svg>
+                            <span>1</span>
+                        </a>
+                    </div>
+                    <div class="header-call">
+                        <a href="tel:+380676712131">
+                            <svg>
+                                <use xlink:href="#icon-phone"></use>
+                            </svg>
+                            <span>
+                                067 671 21 31
+                            </span>
+                        </a>
+                    </div>
+                    <div class="burger hidden-on-desktop">
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!--Start page-->
+    <div class="page-wrapper page-news">
+        <div class="container--fluid">
+            <!-- Start breadcrumbs -->
+            <ul class="breadcrumbs">
+                <li><a href="/">Головна</a></li>
+                <li>SWD Rheinol ATF Dexron II D</li>
+            </ul>
+            <!-- End breadcrumbs -->
+        </div>
+
+        <section class="section--checkout">
+            <div class="container">
+                <h2 class="section-title title-border">Оформлення замовлення</h2>
+
+                <div class="checkout">
+                    <form action="" class="form checkout__form">
+                        <div class="form__section">
+                            <div class="form__label">
+                                <span class="number">1</span>
+                                <span class="title">Особисті дані</span>
+                            </div>
+                            <label class="form-group form-group--horizontal form-group--required">
+                                <span class="label">
+                                    <span class="label-text">Ім’я та прізвище</span>
+                                </span>
+                                <input id="input-name" type="text" name="name" required>
+                            </label>
+                            <label class="form-group form-group--horizontal form-group--required">
+                                <span class="label">
+                                    <span class="label-text">Телефон</span>
+                                </span>
+                                <input id="input-phone" type="text" name="phone" required>
+                            </label>
+                            <label class="form-group form-group--horizontal ">
+                                <span class="label">
+                                    <span class="label-text">Email (необов&#x27;язково)</span>
+                                </span>
+                                <input id="input-email" type="text" name="email" >
+                            </label>
+                        </div>
+
+                        <div class="form__section">
+                            <div class="form__label">
+                                <span class="number">2</span>
+                                <span class="title">Доставка</span>
+                            </div>
+                            <div class="delivery">
+                                <!-- Radio buttons -->
+                                <div class="radio-wrapper ">
+                                    <!--
+                                        Handlebars each statement have its own context and
+                                        if you want to get variable (beside this) you have to use ../variableName
+                                        as in an example below with name and required variable
+                                    -->
+                                        <!-- this refer to option element  -->
+                                        <label class="form-group form-group--radio">
+                                            <span class="form-radio">
+                                                <input class="radio-js"
+                                                       type="radio"
+                                                       name="post"
+                                                       value="new_post"
+                                                       hidden
+                                                    checked
+                                                    required
+                                                >
+                                                <span class="radio"></span>
+                                            </span>
+                                
+                                            <span class="label">
+                                                <span class="label-text">Нова Пошта</span>
+                                            </span>
+                                        </label>
+                                        <!-- this refer to option element  -->
+                                        <label class="form-group form-group--radio">
+                                            <span class="form-radio">
+                                                <input class="radio-js"
+                                                       type="radio"
+                                                       name="post"
+                                                       value="ukr_post"
+                                                       hidden
+                                                    
+                                                    required
+                                                >
+                                                <span class="radio"></span>
+                                            </span>
+                                
+                                            <span class="label">
+                                                <span class="label-text">Укрпошта</span>
+                                            </span>
+                                        </label>
+                                        <!-- this refer to option element  -->
+                                        <label class="form-group form-group--radio">
+                                            <span class="form-radio">
+                                                <input class="radio-js"
+                                                       type="radio"
+                                                       name="post"
+                                                       value="self"
+                                                       hidden
+                                                    
+                                                    required
+                                                >
+                                                <span class="radio"></span>
+                                            </span>
+                                
+                                            <span class="label">
+                                                <span class="label-text">Самовивіз</span>
+                                            </span>
+                                        </label>
+                                </div>
+                                <div class="delivery__place">
+                                    <div class="form-group form-group--select">
+                                        <label class="select-label select-label-js">
+                                            <input class="input input-value-js"
+                                                   type="text"
+                                                   readonly
+                                                   placeholder="Оберіть область"
+                                            />
+                                    
+                                            <!-- Value of this input will be sent to back -->
+                                            <input class="input input-key-js" name="oblast" readonly hidden>
+                                    
+                                            <span class="select-icon"><svg><use xlink:href="#icon-arrow-left"></use></svg></span>
+                                        </label>
+                                    
+                                        <ul class="options options-js">
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="ob1">Область 1</li>
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="ob2">Область 2</li>
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="ob3">Область 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="form-group form-group--select">
+                                        <label class="select-label select-label-js">
+                                            <input class="input input-value-js"
+                                                   type="text"
+                                                   readonly
+                                                   placeholder="Оберіть місто"
+                                            />
+                                    
+                                            <!-- Value of this input will be sent to back -->
+                                            <input class="input input-key-js" name="oblast" readonly hidden>
+                                    
+                                            <span class="select-icon"><svg><use xlink:href="#icon-arrow-left"></use></svg></span>
+                                        </label>
+                                    
+                                        <ul class="options options-js">
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="city1">Місто 1</li>
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="city2">Місто 2</li>
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="city3">Місто 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="form-group form-group--select">
+                                        <label class="select-label select-label-js">
+                                            <input class="input input-value-js"
+                                                   type="text"
+                                                   readonly
+                                                   placeholder="Оберіть відділення"
+                                            />
+                                    
+                                            <!-- Value of this input will be sent to back -->
+                                            <input class="input input-key-js" name="oblast" readonly hidden>
+                                    
+                                            <span class="select-icon"><svg><use xlink:href="#icon-arrow-left"></use></svg></span>
+                                        </label>
+                                    
+                                        <ul class="options options-js">
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="1">Відділення 1</li>
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="2">Відділення 2</li>
+                                                <!-- { this } refer to options element -->
+                                                <li class="option option-js" data-key="3">Відділення 3</li>
+                                        </ul>
+                                    </div>
+                                    <label class="form-group form-group--checkbox ">
+                                        <span class="form-checkbox">
+                                            <input class="checkbox-js"
+                                                   type="checkbox"
+                                                   name="curier"
+                                                   value=""
+                                                   hidden
+                                                
+                                                
+                                            >
+                                            <span class="checkbox"></span>
+                                        </span>
+                                    
+                                        <span class="label">
+                                            <span class="label-text">Доставка кур&#x27;ером</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <div class="form__label">
+                                <span class="number">3</span>
+                                <span class="title">Оплата</span>
+                            </div>
+                            <!-- Radio buttons -->
+                            <div class="radio-wrapper ">
+                                <!--
+                                    Handlebars each statement have its own context and
+                                    if you want to get variable (beside this) you have to use ../variableName
+                                    as in an example below with name and required variable
+                                -->
+                                    <!-- this refer to option element  -->
+                                    <label class="form-group form-group--radio">
+                                        <span class="form-radio">
+                                            <input class="radio-js"
+                                                   type="radio"
+                                                   name="pay_method"
+                                                   value="cash"
+                                                   hidden
+                                                checked
+                                                required
+                                            >
+                                            <span class="radio"></span>
+                                        </span>
+                            
+                                        <span class="label">
+                                            <span class="label-text"> Готівка при отриманні</span>
+                                        </span>
+                                    </label>
+                                    <!-- this refer to option element  -->
+                                    <label class="form-group form-group--radio">
+                                        <span class="form-radio">
+                                            <input class="radio-js"
+                                                   type="radio"
+                                                   name="pay_method"
+                                                   value="card"
+                                                   hidden
+                                                
+                                                required
+                                            >
+                                            <span class="radio"></span>
+                                        </span>
+                            
+                                        <span class="label">
+                                            <span class="label-text">Оплатити карткою Visa/Mastercard</span>
+                                        </span>
+                                    </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn--medium btn--lines"><span>Оформити замовлення</span>
+                        </button>
+                    </form>
+
+                    <div class="checkout__cart">
+                        <div class="cart">
+                            <div class="cart__products">
+                                <div class="cart__product">
+                                    <a href="##" class="remove">
+                                        <svg>
+                                            <use xlink:href="#icon-x"></use>
+                                        </svg>
+                                    </a>
+                        
+                                    <div class="image">
+                                        <img src="img/product-1.jpg" alt="product-1">
+                                    </div>
+                        
+                                    <div class="info">
+                                        <div class="title">SWD Rheinol ATF Dexron II D <br>1л</div>
+                                        <div class="numbers">
+                                            <div class="price skew skew--more"><span>300 грн</span></div>
+                        
+                                            <div class="count">
+                                                <a class="minus skew skew--more"><span>&ndash;</span></a>
+                                                <div class="current skew skew--more"><span>1</span></div>
+                                                <a class="plus skew skew--more"><span>+</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="total">
+                                        <span class="total-title">Сума</span>
+                                        <span class="total-number">300 грн</span>
+                                    </div>
+                                </div>
+                                <div class="cart__product">
+                                    <a href="##" class="remove">
+                                        <svg>
+                                            <use xlink:href="#icon-x"></use>
+                                        </svg>
+                                    </a>
+                        
+                                    <div class="image">
+                                        <img src="img/product-2.jpeg" alt="product-1">
+                                    </div>
+                        
+                                    <div class="info">
+                                        <div class="title">SWD Rheinol ATF Dexron II D</div>
+                                        <div class="numbers">
+                                            <div class="price skew skew--more"><span>300 грн</span></div>
+                        
+                                            <div class="count">
+                                                <a class="minus skew skew--more"><span>&ndash;</span></a>
+                                                <div class="current skew skew--more"><span>50</span></div>
+                                                <a class="plus skew skew--more"><span>+</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="total">
+                                        <span class="total-title">Сума</span>
+                                        <span class="total-number">15 000 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div class="total__title">Разом до оплати</div>
+                            <div class="total__number">15 300 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!--End page-->
+</div>
+<!-- End site wrapper -->
+<script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="svgsprite.js"></script></body>
+
+</html>
