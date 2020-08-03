@@ -69,7 +69,92 @@
 <!-- Body Modifications -->
 <!-- fixed header: header position: fixed -->
 
-<body class="fixed-header">
+<!-- Start cart modal -->
+<div id="modal-cart" class="modal ">
+    <div class="modal__window">
+        <span class="modal__cross modal-close-js">
+            <svg><use xlink:href="#icon-x"></use></svg>
+        </span>
+
+
+        <div class="modal__content">
+            <div class="cart">
+                <div class="cart__products">
+                    <div class="cart__product">
+                        <a href="##" class="remove">
+                            <svg>
+                                <use xlink:href="#icon-x"></use>
+                            </svg>
+                        </a>
+            
+                        <div class="image">
+                            <img src="img/product-1.jpg" alt="product-1">
+                        </div>
+            
+                        <div class="info">
+                            <div class="title">SWD Rheinol ATF Dexron II D <br>1л</div>
+                            <div class="numbers">
+                                <div class="price skew skew--more"><span>300 грн</span></div>
+            
+                                <div class="count">
+                                    <a class="minus skew skew--more"><span>&ndash;</span></a>
+                                    <div class="current skew skew--more"><span>1</span></div>
+                                    <a class="plus skew skew--more"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="total">
+                            <span class="total-title">Сума</span>
+                            <span class="total-number">300 грн</span>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <a href="##" class="remove">
+                            <svg>
+                                <use xlink:href="#icon-x"></use>
+                            </svg>
+                        </a>
+            
+                        <div class="image">
+                            <img src="img/product-2.jpeg" alt="product-1">
+                        </div>
+            
+                        <div class="info">
+                            <div class="title">SWD Rheinol ATF Dexron II D</div>
+                            <div class="numbers">
+                                <div class="price skew skew--more"><span>300 грн</span></div>
+            
+                                <div class="count">
+                                    <a class="minus skew skew--more"><span>&ndash;</span></a>
+                                    <div class="current skew skew--more"><span>50</span></div>
+                                    <a class="plus skew skew--more"><span>+</span></a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="total">
+                            <span class="total-title">Сума</span>
+                            <span class="total-number">15 000 грн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button type="button" class="btn btn--medium btn--empty modal-close-js">
+                <span>Продовжити покупки</span>
+            </button>
+            <a href="#" class="btn btn--medium btn--lines"><span>Оформити замовлення</span></a>
+        </div>
+    </div>
+</div>
+
+<!-- Trigger example -->
+<!-- End cart modal -->
+
+<body class="">
     <!-- Start site wrapper -->
     <div class="site-wrapper">
 
@@ -106,7 +191,7 @@
                                 </li>
         
                                 <li class="goods-basket-wrap">
-                                    <a href="#">
+                                    <a href="#modal-cart" class="modal-open-js">
                                         <div class="goods-basket">
                                             <svg>
                                                 <use xlink:href="#icon-basket"></use>
@@ -132,7 +217,7 @@
         
                     <div class="header-controls">
                         <div class="goods-basket">
-                            <a href="#" class="hide-pc">
+                            <a href="#modal-cart" class="hide-pc modal-open-js">
                                 <svg>
                                     <use xlink:href="#icon-basket"></use>
                                 </svg>
@@ -157,7 +242,8 @@
                     </div>
                 </div>
             </div>
-        </header>        <!-- End header -->
+        </header>
+        <!-- End header -->
 
         <!--Start page-->
         <div class="page-wrapper page-wrapper--lite-gray js-filter-close page-catalog ">
@@ -818,7 +904,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -840,7 +926,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -862,7 +948,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -884,7 +970,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -906,7 +992,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -928,7 +1014,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -950,7 +1036,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -972,7 +1058,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -994,7 +1080,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -1016,7 +1102,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -1038,7 +1124,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                     <div class="product-wrap">
                         <div class="product product--small">
                             <div class="product-img">
@@ -1060,7 +1146,7 @@
                                 </div>
                             </div>
                         </div>                    </div>
-                   
+
                 </div>
 
                 <!-- Start pagination -->
