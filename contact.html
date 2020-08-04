@@ -72,12 +72,12 @@
 <body class="">
 
     <!-- Start cart modal -->
-    <!-- Class notation: "modal-event-js" class will listen to document.dispatchEvent -->
     <div id="modal-cart" class="modal ">
         <div class="modal__window">
             <span class="modal__cross modal-close-js">
                 <svg><use xlink:href="#icon-x"></use></svg>
             </span>
+    
     
             <div class="modal__content">
                 <div class="cart">
@@ -154,26 +154,6 @@
     </div>
     
     <!-- Trigger example -->
-    
-    
-    <!-- Open without trigger example -->
-    <!--<script>-->
-    <!--	var submitBtn = document.querySelector('.checkout button');-->
-    
-    <!--	submitBtn && submitBtn.addEventListener('click', function() {-->
-    <!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
-    <!--	});-->
-    <!--</script>-->
-    
-    <!-- Open without trigger example -->
-    <!--<script>-->
-    <!--	var checkoutForm = document.querySelector('#checkout-form');-->
-    
-    <!--	checkoutForm && checkoutForm.addEventListener('submit', function(event) {-->
-    <!--		event.preventDefault();-->
-    <!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
-    <!--	});-->
-    <!--</script>-->
     <!-- End cart modal -->
 
     <!-- Start site wrapper -->
@@ -267,7 +247,7 @@
         <!-- End header -->
 
         <!--Start page-->
-        <div class="page-wrapper page-wrapper--lite-gray">
+        <div class="page-wrapper">
             <div class="container--fluid">
                 <!-- Start breadcrumbs -->
                 <ul class="breadcrumbs">
@@ -514,117 +494,61 @@
                 </div>
 
             </div>
-
-            <!-- Start contact-form section -->
-            <section class="section contact-form " id="">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-4 col-12 ">
-                            <div class="contact-form__picture">
-                                <img src="img/truck-lider-black.png"
-                                    srcset="img/truck-lider-black.png 1x, img/truck-lider-black@2x.png 2x" alt="Truck lider">
-                            </div>
-                        </div>
-                        <div class=" col-lg-8 col-12">
-                            <div class="contact-form__form">
-            
-                                <h2 class="title">
-                                    Ми можемо бути вам корисні?
-                                </h2>
-                                <form action="" class="form">
-                                    <!-- Required input -->
-                                    <div class="form__row">
-                                        <label class="form-group  form-group--required">
-                                            <span class="label">
-                                                <span class="label-text">Ім’я та прізвище</span>
-                                            </span>
-                                            <input id="input-input1" type="text" name="input1" required>
-                                        </label>
-                                        <label class="form-group  form-group--required">
-                                            <span class="label">
-                                                <span class="label-text"> Телефон</span>
-                                            </span>
-                                            <input id="input-input2" type="tel" name="input2" required>
-                                        </label>
-                                        <label class="form-group  ">
-                                            <span class="label">
-                                                <span class="label-text"> Email</span>
-                                            </span>
-                                            <input id="input-input3" type="text" name="input3" >
-                                        </label>
-                                    </div>
-            
-                                    <!-- Optional textarea -->
-                                    <label
-                                            class="form-group form-group--textarea
-                                            
-                                            "
-                                    >
-                                        <span class="label">
-                                            <span class="label-text">Не обов&#x27;язковий</span>
-                                        </span>
-                                        <textarea id="input-massage2" name="massage2" cols="30" rows="5" ></textarea>
-                                    </label>
-                                    <div class="form__row--btn">
-                                        <a class="btn btn--lines"><span>Надіслати</span></a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-            
-                    </div>
-            
-            
-            
-                </div>
-            </section>
-            <!-- End  contact-form section -->        
         </div>
         <!--End page-->
 
         <!-- Start footer -->
-        <footer class="footer footer--contact">
+        <footer class="footer">
             <!-- Footer bg -->
-            <div class="footer__bg" style="background-image: url('img/footer-map-min.png')"></div>
+            <div class="footer__bg" style="background-image: url('img/footer-overlay.png')"></div>
         
             <!-- Content -->
             <div class="container">
-                <div class="footer-inner">
+                <!-- Footer email and phone info -->
+                <div class="footer__contacts">
+                    <div class="img">
+                        <img src="img/truck-lider-black.png"
+                             srcset="img/truck-lider-black.png 1x, img/truck-lider-black@2x.png 2x"
+                             alt="Truck lider">
+                    </div>
         
-                    <!-- Footer email and phone info -->
-                    <div class="footer__contacts">
-                        <div class="links">
-                            <div class="email">
-                                <a href="mailto:kushyna.a@gmail.com" class="btn btn--empty btn--empty--hover-color btn--icon">
-                                    <svg>
-                                        <use xlink:href="#icon-mail"></use>
-                                    </svg>
-                                </a>
-                                <a href="mailto:kushyna.a@gmail.com">
-                                    <span>Kushyna.a@gmail.com</span>
-                                </a>
-                            </div>
+                    <div class="links">
+                        <div class="email">
+                            <a href="mailto:kushyna.a@gmail.com" class="btn btn--empty btn--empty--hover-color btn--icon">
+                                <svg>
+                                    <use xlink:href="#icon-mail"></use>
+                                </svg>
+                            </a>
+                            <a href="mailto:kushyna.a@gmail.com">
+                                <span>Kushyna.a@gmail.com</span>
+                            </a>
+                        </div>
+        
+                        <div class="phone">
+                            <a href="tel:+380665566555" class="btn btn--empty btn--empty--hover-color btn--icon">
+                                <svg>
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>
+                            </a>
+                            <a href="tel:+380665566555">
+                                <span>066 556 65 55</span>
+                            </a>
                         </div>
                     </div>
+                </div>
         
-                    <!-- Footer bottom social icons and copyright -->
-                    <div class="footer__social">
-                        <ul class="socials">
-                            <li><a href="#"><svg>
-                                        <use xlink:href="#icon-social-skype"></use>
-                                    </svg></a></li>
-                            <li><a href="#"><svg>
-                                        <use xlink:href="#icon-social-telegram"></use>
-                                    </svg></a></li>
-                            <li><a href="#"><svg>
-                                        <use xlink:href="#icon-social-vider"></use>
-                                    </svg></a></li>
-                        </ul>
-                    </div>
+                <!-- Footer bottom social icons and copyright -->
+                <div class="footer__social">
+                    <ul class="socials">
+                        <li><a href="#"><svg><use xlink:href="#icon-social-skype"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="#icon-social-telegram"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="#icon-social-vider"></use></svg></a></li>
+                    </ul>
+                    <p class="copyright">© 2020 TRUCKLIDER</p>
                 </div>
             </div>
-        </footer>        <!-- End footer -->
+        </footer>
+        <!-- End footer -->
     </div>
     <!-- End site wrapper -->
 <script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="svgsprite.js"></script></body>
