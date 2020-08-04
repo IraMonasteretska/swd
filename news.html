@@ -72,12 +72,12 @@
 <body class="">
 
     <!-- Start cart modal -->
+    <!-- Class notation: "modal-event-js" class will listen to document.dispatchEvent -->
     <div id="modal-cart" class="modal ">
         <div class="modal__window">
             <span class="modal__cross modal-close-js">
                 <svg><use xlink:href="#icon-x"></use></svg>
             </span>
-    
     
             <div class="modal__content">
                 <div class="cart">
@@ -154,6 +154,26 @@
     </div>
     
     <!-- Trigger example -->
+    
+    
+    <!-- Open without trigger example -->
+    <!--<script>-->
+    <!--	var submitBtn = document.querySelector('.checkout button');-->
+    
+    <!--	submitBtn && submitBtn.addEventListener('click', function() {-->
+    <!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
+    <!--	});-->
+    <!--</script>-->
+    
+    <!-- Open without trigger example -->
+    <!--<script>-->
+    <!--	var checkoutForm = document.querySelector('#checkout-form');-->
+    
+    <!--	checkoutForm && checkoutForm.addEventListener('submit', function(event) {-->
+    <!--		event.preventDefault();-->
+    <!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
+    <!--	});-->
+    <!--</script>-->
     <!-- End cart modal -->
 
     <!-- Start site wrapper -->
@@ -260,9 +280,9 @@
 
             <section class="section--home-news">
                 <div class="container">
-                    <h2 class="section-title">Новини</h2>
+                    <h2 class="section-title fadeInDown animated">Новини</h2>
 
-                    <div class="news">
+                    <div class="news fadeInUp animated">
                         <div class="item"><div class="post">
     <div class="post__img">
         <a href="#"><img src="img/post-1.png" alt="Post name"></a>
@@ -418,7 +438,7 @@
             <!-- Content -->
             <div class="container">
                 <!-- Footer email and phone info -->
-                <div class="footer__contacts">
+                <div class="footer__contacts ">
                     <div class="img">
                         <img src="img/truck-lider-black.png"
                              srcset="img/truck-lider-black.png 1x, img/truck-lider-black@2x.png 2x"

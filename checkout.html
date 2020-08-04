@@ -71,13 +71,53 @@
 
 <body class="">
 
+<!-- Start modal thanks -->
+<div id="modal-thanks" class="modal modal--thanks">
+    <div class="modal__window" style="background-image: url('img/modal-thanks-bg.jpg')">
+        <div class="modal__content section--dark">
+            <div class="h1 title">Дякуємо! Ваше замовлення оформлено.</div>
+            <div class="description">Наш менеджер невдовзі зв’яжеться з Вами</div>
+        </div>
+
+        <div class="actions">
+            <a href="catalog.html" class="btn btn--cta">
+                <span>Каталог</span>
+            </a>
+
+            <a href="index.html" class="btn btn--empty">
+                <span>На головну</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Open example -->
+<!--<script>-->
+<!--	var submitBtn = document.querySelector('.checkout button');-->
+
+<!--	submitBtn && submitBtn.addEventListener('click', function() {-->
+<!--		document.dispatchEvent(new Event('modal-open#modal-thanks'));-->
+<!--	});-->
+<!--</script>-->
+
+<!-- Open example -->
+<!--<script>-->
+<!--	var checkoutForm = document.querySelector('#checkout-form');-->
+
+<!--	checkoutForm && checkoutForm.addEventListener('submit', function(event) {-->
+<!--		event.preventDefault();-->
+<!--		document.dispatchEvent(new Event('modal-open#modal-thanks'));-->
+<!--	});-->
+<!--</script>-->
+<!-- End modal thanks -->
+
 <!-- Start cart modal -->
+<!-- Class notation: "modal-event-js" class will listen to document.dispatchEvent -->
 <div id="modal-cart" class="modal ">
     <div class="modal__window">
         <span class="modal__cross modal-close-js">
             <svg><use xlink:href="#icon-x"></use></svg>
         </span>
-
 
         <div class="modal__content">
             <div class="cart">
@@ -154,6 +194,26 @@
 </div>
 
 <!-- Trigger example -->
+
+
+<!-- Open without trigger example -->
+<!--<script>-->
+<!--	var submitBtn = document.querySelector('.checkout button');-->
+
+<!--	submitBtn && submitBtn.addEventListener('click', function() {-->
+<!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
+<!--	});-->
+<!--</script>-->
+
+<!-- Open without trigger example -->
+<!--<script>-->
+<!--	var checkoutForm = document.querySelector('#checkout-form');-->
+
+<!--	checkoutForm && checkoutForm.addEventListener('submit', function(event) {-->
+<!--		event.preventDefault();-->
+<!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
+<!--	});-->
+<!--</script>-->
 <!-- End cart modal -->
 
 <!-- Start site wrapper -->
@@ -262,7 +322,7 @@
                 <h2 class="section-title title-border">Оформлення замовлення</h2>
 
                 <div class="checkout">
-                    <form action="" class="form checkout__form">
+                    <form id="checkout-form" class="form checkout__form">
                         <div class="form__section">
                             <div class="form__label">
                                 <span class="number">1</span>
@@ -278,7 +338,7 @@
                                 <span class="label">
                                     <span class="label-text">Телефон</span>
                                 </span>
-                                <input id="input-phone" type="text" name="phone" required>
+                                <input id="input-phone" type="tel" name="phone" required>
                             </label>
                             <label class="form-group form-group--horizontal ">
                                 <span class="label">
@@ -574,7 +634,14 @@
             </div>
         </section>
 
+        <script>
+            var checkoutForm = document.querySelector('#checkout-form');
 
+            checkoutForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                document.dispatchEvent(new Event('modal-open#modal-thanks'));
+            });
+        </script>
     </div>
     <!--End page-->
 </div>
