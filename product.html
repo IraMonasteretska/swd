@@ -72,12 +72,12 @@
 <body class="">
 
 <!-- Start cart modal -->
+<!-- Class notation: "modal-event-js" class will listen to document.dispatchEvent -->
 <div id="modal-cart" class="modal ">
     <div class="modal__window">
         <span class="modal__cross modal-close-js">
             <svg><use xlink:href="#icon-x"></use></svg>
         </span>
-
 
         <div class="modal__content">
             <div class="cart">
@@ -154,6 +154,26 @@
 </div>
 
 <!-- Trigger example -->
+
+
+<!-- Open without trigger example -->
+<!--<script>-->
+<!--	var submitBtn = document.querySelector('.checkout button');-->
+
+<!--	submitBtn && submitBtn.addEventListener('click', function() {-->
+<!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
+<!--	});-->
+<!--</script>-->
+
+<!-- Open without trigger example -->
+<!--<script>-->
+<!--	var checkoutForm = document.querySelector('#checkout-form');-->
+
+<!--	checkoutForm && checkoutForm.addEventListener('submit', function(event) {-->
+<!--		event.preventDefault();-->
+<!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
+<!--	});-->
+<!--</script>-->
 <!-- End cart modal -->
 
 <!-- Start site wrapper -->
