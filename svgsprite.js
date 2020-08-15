@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 36);
+/******/ 	return __webpack_require__(__webpack_require__.s = 38);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1398,7 +1398,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 36:
+/***/ 38:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1479,6 +1479,28 @@ var icon_x_symbol = new browser_symbol_default.a({
 });
 var icon_x_result = browser_sprite_build_default.a.add(icon_x_symbol);
 /* harmony default export */ var icon_x = (icon_x_symbol);
+// CONCATENATED MODULE: ./src/assets/icons/icon-header-login.svg
+
+
+var icon_header_login_symbol = new browser_symbol_default.a({
+  "id": "icon-header-login",
+  "use": "icon-header-login-usage",
+  "viewBox": "0 0 512 512",
+  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" id=\"icon-header-login\"><path d=\"M489.667-1h-384C93.885-1 84.333 8.551 84.333 20.333v149.333c0 11.782 9.551 21.333 21.333 21.333 11.782 0 21.333-9.551 21.333-21.333v-128h341.333v426.667H127v-128c0-11.782-9.551-21.333-21.333-21.333-11.782 0-21.333 9.551-21.333 21.333v149.333c0 11.782 9.551 21.333 21.333 21.333h384c11.782 0 21.333-9.551 21.333-21.333V20.333C511 8.551 501.449-1 489.667-1z\" /><path d=\"M197.248 325.251c-8.331 8.331-8.331 21.839 0 30.17 8.331 8.331 21.839 8.331 30.17 0l85.333-85.333.01-.011c.493-.494.96-1.012 1.403-1.552.203-.247.379-.507.569-.761.227-.303.462-.6.673-.916.203-.304.379-.619.565-.931.171-.286.35-.565.508-.859.17-.318.314-.644.467-.969.145-.307.298-.609.429-.923.13-.315.236-.637.35-.957.121-.337.25-.669.354-1.013.097-.32.168-.646.249-.969.089-.351.187-.698.258-1.055.074-.375.119-.753.173-1.13.044-.311.104-.617.135-.933.138-1.4.138-2.811 0-4.211-.031-.315-.09-.621-.135-.933-.054-.377-.098-.756-.173-1.13-.071-.358-.169-.704-.258-1.055-.081-.324-.152-.649-.249-.969-.104-.344-.233-.677-.354-1.013-.115-.32-.22-.642-.35-.957-.13-.315-.284-.616-.429-.923-.153-.324-.297-.651-.467-.969-.158-.294-.337-.573-.508-.859-.186-.312-.362-.627-.565-.931-.211-.316-.446-.612-.673-.916-.19-.254-.366-.514-.569-.761-.443-.54-.91-1.059-1.403-1.552l-.01-.011-85.333-85.333c-8.331-8.331-21.839-8.331-30.17 0s-8.331 21.839 0 30.17l48.915 48.915H20.333C8.551 233.669-1 243.22-1 255.002s9.551 21.333 21.333 21.333h225.83l-48.915 48.916z\" /></symbol>"
+});
+var icon_header_login_result = browser_sprite_build_default.a.add(icon_header_login_symbol);
+/* harmony default export */ var icon_header_login = (icon_header_login_symbol);
+// CONCATENATED MODULE: ./src/assets/icons/icon-header-user.svg
+
+
+var icon_header_user_symbol = new browser_symbol_default.a({
+  "id": "icon-header-user",
+  "use": "icon-header-user-usage",
+  "viewBox": "0 0 24 24",
+  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" id=\"icon-header-user\"><path d=\"M0 20.4V24h24v-3.6c0-8.04-24-8.04-24 0zM12 12a6 6 0 100-12 6 6 0 000 12z\" /></symbol>"
+});
+var icon_header_user_result = browser_sprite_build_default.a.add(icon_header_user_symbol);
+/* harmony default export */ var icon_header_user = (icon_header_user_symbol);
 // CONCATENATED MODULE: ./src/assets/icons/icons-arrow/icon-arrow-left.svg
 
 
@@ -1666,9 +1688,22 @@ var icon_mod_view_table_symbol = new browser_symbol_default.a({
 });
 var icon_mod_view_table_result = browser_sprite_build_default.a.add(icon_mod_view_table_symbol);
 /* harmony default export */ var icon_mod_view_table = (icon_mod_view_table_symbol);
+// CONCATENATED MODULE: ./src/assets/icons/icon-input-edit.svg
+
+
+var icon_input_edit_symbol = new browser_symbol_default.a({
+  "id": "icon-input-edit",
+  "use": "icon-input-edit-usage",
+  "viewBox": "0 0 14 14",
+  "content": "<symbol xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 14 14\" id=\"icon-input-edit\"><path d=\"M4.059 10.52l6.168-6.169 1.45 1.45L5.51 11.97l-1.45-1.45zM.794 11.553L0 14l2.447-.794-1.653-1.653zM2.03 8.49l6.168-6.17 1.45 1.45L3.48 9.94 2.03 8.49zM8.78 1.741l1.739-1.74 3.48 3.48-1.74 1.74-3.48-3.48zM1.563 9.182l-.485 1.495 2.245 2.246 1.496-.485-3.256-3.256z\" /></symbol>"
+});
+var icon_input_edit_result = browser_sprite_build_default.a.add(icon_input_edit_symbol);
+/* harmony default export */ var icon_input_edit = (icon_input_edit_symbol);
 // CONCATENATED MODULE: ./src/ts/svg-sprite.ts
 /* Icons */
 // General
+
+
 
 
 
@@ -1694,8 +1729,10 @@ var icon_mod_view_table_result = browser_sprite_build_default.a.add(icon_mod_vie
 // Contact
 
 
-// Catalog 
+// Catalog
 
+
+// Profile
 
 
 

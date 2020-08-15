@@ -70,8 +70,7 @@
 <!-- fixed header: header position: fixed -->
 
 <body class="">
-
-    <!-- Start cart modal -->
+    <!-- Start home modal -->
     <!-- Class notation: "modal-event-js" class will listen to document.dispatchEvent -->
     <div id="modal-cart" class="modal ">
         <div class="modal__window">
@@ -174,13 +173,13 @@
     <!--		document.dispatchEvent(new Event('modal-open#modal-id'));-->
     <!--	});-->
     <!--</script>-->
-    <!-- End cart modal -->
+    <!-- End home modal -->
 
     <!-- Start site wrapper -->
-    <div class="site-wrapper">
+    <div class="site-wrapper site-wrapper--100vh">
 
         <!-- Start header -->
-        <header class="header header--fill">
+        <header class="header  header--fill">
             <div class="container container--big">
                 <div class="header__row">
                     <a href="sitemap.html" class="logo">
@@ -285,270 +284,115 @@
         </header>        <!-- End header -->
 
         <!--Start page-->
-        <div class="page-wrapper page-news">
+        <div class="page-wrapper">
+
+            <!-- Start breadcrumbs -->
             <div class="container--fluid">
-                <!-- Start breadcrumbs -->
                 <ul class="breadcrumbs">
                     <li><a href="/">Головна</a></li>
                     <li>SWD Rheinol ATF Dexron II D</li>
                 </ul>
-                <!-- End breadcrumbs -->
-
             </div>
+            <!-- End breadcrumbs -->
+
             <div class="container">
+                <div class="profile">
+                    <h2 class="profile__title">
+                        Профіль
+                    </h2>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <label for="input-name"
+                                class="form-group form-group--horizontal form-group--required">
+                                <span class="label">
+                                    <span class="label-text">Ім&#x27;я </span>
+                                </span>
+                            </label>
+                            <input id="input-name" type="text" name="name"
+                                required value="Віктор" readonly>
+                            <div class="input-edit js-input-edit">
+                                <svg>
+                                    <use xlink:href="#icon-input-edit"></use>
+                                </svg>
+                                Редагувати
+                            </div>
+                        </div>                        <div class="form-row">
+                            <label for="input-last-name"
+                                class="form-group form-group--horizontal form-group--required">
+                                <span class="label">
+                                    <span class="label-text">Прізвище </span>
+                                </span>
+                            </label>
+                            <input id="input-last-name" type="text" name="last-name"
+                                required value="Панчак" readonly>
+                            <div class="input-edit js-input-edit">
+                                <svg>
+                                    <use xlink:href="#icon-input-edit"></use>
+                                </svg>
+                                Редагувати
+                            </div>
+                        </div>                        <div class="form-row">
+                            <label for="input-email"
+                                class="form-group form-group--horizontal form-group--required">
+                                <span class="label">
+                                    <span class="label-text">Адреса електронної пошти </span>
+                                </span>
+                            </label>
+                            <input id="input-email" type="email" name="email"
+                                required value="Victor123@gmail.com" readonly>
+                            <div class="input-edit js-input-edit">
+                                <svg>
+                                    <use xlink:href="#icon-input-edit"></use>
+                                </svg>
+                                Редагувати
+                            </div>
+                        </div>
+                        <h6>
+                            Змінити пароль
+                        </h6>
+                        <div class="form-password-group">
+                            <label class="form-group form-group--horizontal ">
+                                <span class="label">
+                                    <span class="label-text">Пароль </span>
+                                </span>
+                                <div class="input-wrap js-input-wrap">
+                            
+                                    <input id="input-password" type="text" name="password"
+                                         value="">
+                                    <svg>
+                                        <use xlink:href="#icon-input-edit"></use>
+                                    </svg>
+                                </div>
+                            </label>                            <label class="form-group form-group--horizontal ">
+                                <span class="label">
+                                    <span class="label-text">Пароль </span>
+                                </span>
+                                <div class="input-wrap js-input-wrap">
+                            
+                                    <input id="input-password" type="text" name="password"
+                                         value="">
+                                    <svg>
+                                        <use xlink:href="#icon-input-edit"></use>
+                                    </svg>
+                                </div>
+                            </label>                            <label class="form-group form-group--horizontal ">
+                                <span class="label">
+                                    <span class="label-text">Пароль </span>
+                                </span>
+                                <div class="input-wrap js-input-wrap">
+                            
+                                    <input id="input-password" type="text" name="password"
+                                         value="">
+                                    <svg>
+                                        <use xlink:href="#icon-input-edit"></use>
+                                    </svg>
+                                </div>
+                            </label>                        </div>
 
-
-                <div class="article">
-                    <div class="article__head">
-                        <h1 class="title">
-                            Swd Rheinol Primus GF 0W-20
-                        </h1>
-                        <p class="date">
-                            17.02.2020
-
-                        </p>
-                    </div>
-
-                    <div class="text">
-                        <h3>
-                            В ближайшее время продукты Swd Rheinol Primus GF 0W-20 / 5W-20 будут сняты с производства.
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id interdum nunc. Vivamus in
-                            ornare
-                            metus, quis iaculis tellus. Nullam ipsum lectus, vestibulum ac tortor a, placerat auctor
-                            metus.
-                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Suspendisse scelerisque ligula nec lacus aliquam, et faucibus est accumsan. Donec bibendum
-                            aliquet ante at egestas. Fusce auctor elit in purus ultricies suscipit vel malesuada lorem.
-                            Integer a nisl quis elit fringilla mattis ut ac ligula. Fusce suscipit semper orci, id
-                            mollis
-                            enim mattis volutpat.
-                        </p>
-                        <p>
-                            Nulla volutpat imperdiet volutpat. Ut tincidunt neque mauris, id euismod felis mattis non.
-                            Praesent at egestas arcu. Fusce fringilla tellus ligula, at scelerisque nunc iaculis et.
-                            Morbi
-                            ipsum tellus, dictum eget consequat vitae, ornare id mi. Sed at tempor turpis. Donec tempus
-                            sodales leo at pharetra. Vestibulum euismod ligula id magna hendrerit porta. Phasellus
-                            vehicula
-                            eleifend scelerisque. In tincidunt ipsum nunc.Etiam suscipit placerat urna vitae faucibus.
-                            Sed
-                            tempor leo in malesuada ullamcorper. Sed eu quam finibus, ultrices mauris id, vehicula leo.
-                            Phasellus arcu lacus, varius ac massa et, blandit imperdiet tellus. Nunc orci risus, rutrum
-                            at
-                            neque laoreet, cursus porta purus. Nullam sed elementum arcu. Aliquam pretium tincidunt
-                            condimentum. Integer id justo in odio condimentum sagittis. Curabitur ac vehicula mauris,
-                            sed
-                            tincidunt nulla. Morbi in mauris ex. Sed ut malesuada nisl, nec placerat sapien. Cras
-                            pretium
-                            arcu eget sem mollis luctus id eget magna. Curabitur eu nulla sem. Integer tempus aliquet
-                            elit
-                            nec dignissim. Pellentesque posuere justo quis commodo suscipit.</p>
-                        <img src="img/article-min.jpg" alt="">
-                        <h3>
-                            Swd Rheinol Primus GF 0W-20 / 5W-20
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id interdum nunc. Vivamus in
-                            ornare metus, quis iaculis tellus. Nullam ipsum lectus, vestibulum ac tortor a, placerat
-                            auctor
-                            metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                            mus.
-                            Suspendisse scelerisque ligula nec lacus aliquam, et faucibus est accumsan. Donec bibendum
-                            aliquet ante at egestas. Fusce auctor elit in purus ultricies suscipit vel malesuada lorem.
-                            Integer a nisl quis elit fringilla mattis ut ac ligula. Fusce suscipit semper orci, id
-                            mollis
-                            enim mattis volutpat.
-                        </p>
-
-                    </div>
+                        <button type="submit">Зберегти зміни</button>
+                    </form>
                 </div>
-
             </div>
-
-            <!-- Start call-to-action -->
-            <section class="section--call-to-action section--dark ">
-                <div class="container--fluid">
-                    <div class="cta-slider-wrap">
-                        <div class="cta-slider">
-                <div class="cta-slider__item">
-                  <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
-                    <!-- Title and description -->
-                    <div class="call-to-action__description">
-                      <h2 class="section-title">Безкоштовна доставка:</h2>
-                      <div class="special-offer">
-                        клієнтам на суму більше <span class="offer">2000грн.</span><br>
-                        Доставка здійснюється перевізником Гюнсел.
-                      </div>
-                    </div>
-                
-                    <!-- Actions -->
-                    <div class="call-to-action__actions">
-                      <span class="special-text">Спеціальна пропозиція</span>
-                      <a href="#" class="special-link special-link--desktop">Каталог</a>
-                      <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
-                    </div>
-                  </div>
-                </div>    <div class="cta-slider__item">
-                  <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
-                    <!-- Title and description -->
-                    <div class="call-to-action__description">
-                      <h2 class="section-title">Безкоштовна доставка:</h2>
-                      <div class="special-offer">
-                        клієнтам на суму більше <span class="offer">2000грн.</span><br>
-                        Доставка здійснюється перевізником Гюнсел.
-                      </div>
-                    </div>
-                
-                    <!-- Actions -->
-                    <div class="call-to-action__actions">
-                      <span class="special-text">Спеціальна пропозиція</span>
-                      <a href="#" class="special-link special-link--desktop">Каталог</a>
-                      <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
-                    </div>
-                  </div>
-                </div>    <div class="cta-slider__item">
-                  <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
-                    <!-- Title and description -->
-                    <div class="call-to-action__description">
-                      <h2 class="section-title">Безкоштовна доставка:</h2>
-                      <div class="special-offer">
-                        клієнтам на суму більше <span class="offer">2000грн.</span><br>
-                        Доставка здійснюється перевізником Гюнсел.
-                      </div>
-                    </div>
-                
-                    <!-- Actions -->
-                    <div class="call-to-action__actions">
-                      <span class="special-text">Спеціальна пропозиція</span>
-                      <a href="#" class="special-link special-link--desktop">Каталог</a>
-                      <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
-                    </div>
-                  </div>
-                </div>    <div class="cta-slider__item">
-                  <div class="call-to-action" style="background-image: url('img/call-to-action-bg.png')">
-                    <!-- Title and description -->
-                    <div class="call-to-action__description">
-                      <h2 class="section-title">Безкоштовна доставка:</h2>
-                      <div class="special-offer">
-                        клієнтам на суму більше <span class="offer">2000грн.</span><br>
-                        Доставка здійснюється перевізником Гюнсел.
-                      </div>
-                    </div>
-                
-                    <!-- Actions -->
-                    <div class="call-to-action__actions">
-                      <span class="special-text">Спеціальна пропозиція</span>
-                      <a href="#" class="special-link special-link--desktop">Каталог</a>
-                      <a href="#" class="btn btn--dark special-link--mobile"><span>Каталог</span></a>
-                    </div>
-                  </div>
-                </div>            </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End call-to-action -->
-
-            <!-- Start home products -->
-            <section class="section--similar-products">
-                <div class="container">
-                    <h2 class="section-title">Схожі товари</h2>
-            
-                    <div class="products">
-                        <div class="item"><div class="product ">
-                <a href="###" class="product-link"></a>
-                <div class="product-labels-wrap">
-                </div>
-                <div class="product-img">
-                    <img src="img/product-1.jpg" alt="SWD Rheinol ATF Dexron III H">
-                    <img class="mirror" src="img/product-1.jpg"
-                        alt="Mirror SWD Rheinol ATF Dexron III H">
-                </div>
-            
-                <div class="product-content">
-                    <!-- Title and description -->
-                    <div class="product-info">
-                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
-                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
-                    </div>
-            
-                    <!-- To card and details page -->
-                    <div class="product-actions">
-                        <div class="price">
-                            <span class="price-number">300 грн</span>
-                            <a href="#modal-cart" class="btn btn--icon modal-open-js">
-                                <svg>
-                                    <use xlink:href="#icon-basket"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div></div>
-                        <div class="item"><div class="product ">
-                <a href="###" class="product-link"></a>
-                <div class="product-labels-wrap">
-                </div>
-                <div class="product-img">
-                    <img src="img/product-2.jpeg" alt="SWD Rheinol ATF Dexron III H">
-                    <img class="mirror" src="img/product-2.jpeg"
-                        alt="Mirror SWD Rheinol ATF Dexron III H">
-                </div>
-            
-                <div class="product-content">
-                    <!-- Title and description -->
-                    <div class="product-info">
-                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
-                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
-                    </div>
-            
-                    <!-- To card and details page -->
-                    <div class="product-actions">
-                        <div class="price">
-                            <span class="price-number">300 грн</span>
-                            <a href="#modal-cart" class="btn btn--icon modal-open-js">
-                                <svg>
-                                    <use xlink:href="#icon-basket"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div></div>
-                        <div class="item"><div class="product ">
-                <a href="###" class="product-link"></a>
-                <div class="product-labels-wrap">
-                </div>
-                <div class="product-img">
-                    <img src="img/product-1.jpg" alt="SWD Rheinol ATF Dexron III H">
-                    <img class="mirror" src="img/product-1.jpg"
-                        alt="Mirror SWD Rheinol ATF Dexron III H">
-                </div>
-            
-                <div class="product-content">
-                    <!-- Title and description -->
-                    <div class="product-info">
-                        <h3 class="product-title">SWD Rheinol ATF Dexron III H</h3>
-                        <p class="product-description">Трансмісійна рідина для автоматичних коробок передач</p>
-                    </div>
-            
-                    <!-- To card and details page -->
-                    <div class="product-actions">
-                        <div class="price">
-                            <span class="price-number">300 грн</span>
-                            <a href="#modal-cart" class="btn btn--icon modal-open-js">
-                                <svg>
-                                    <use xlink:href="#icon-basket"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div></div>
-                    </div>
-                </div>
-            </section>
-            <!-- End home products -->
 
         </div>
         <!--End page-->
@@ -605,6 +449,7 @@
             </div>
         </footer>
         <!-- End footer -->
+
     </div>
     <!-- End site wrapper -->
 <script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="svgsprite.js"></script></body>
