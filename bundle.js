@@ -11317,6 +11317,20 @@ var intro_v_3 = __webpack_require__(33);
 // CONCATENATED MODULE: ./src/ts/utility/video.ts
 
 
+// CONCATENATED MODULE: ./src/pages/components/preloader/preloader.ts
+function preloader() {
+    var preload = document.querySelector('.preloader');
+    var site = document.querySelector('.site-wrapper');
+    console.log('sdfsd');
+    if (!preload || !site) {
+        return;
+    }
+    console.log('sdfsd');
+    site.style.opacity = '1';
+    setTimeout(function () { return (preload.style.transform = 'translate(0, 100%)'); }, 3000);
+    setTimeout(function () { return (preload.style.display = 'none'); }, 4000);
+}
+
 // CONCATENATED MODULE: ./src/ts/helpers/get-element.ts
 function getElement(element) {
     if (typeof element === 'string') {
@@ -15383,6 +15397,8 @@ function inputEditPassword() {
 
 // Video
 
+// Components
+
 
 
 
@@ -15398,7 +15414,10 @@ function inputEditPassword() {
 
 
 window.addEventListener('load', function () {
-    // preloader();
+    if (document.querySelector('.preloader')) {
+        console.log(true);
+        preloader();
+    }
     console.log('Page fully loaded');
     // Slider category
     if (document.querySelector('.slider-category')) {
