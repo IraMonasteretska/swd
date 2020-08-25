@@ -15413,7 +15413,6 @@ function inputEditPassword() {
 
 window.addEventListener('load', function () {
     if (document.querySelector('.preloader')) {
-        console.log(true);
         preloader();
     }
     console.log('Page fully loaded');
