@@ -11321,11 +11321,9 @@ var intro_v_3 = __webpack_require__(33);
 function preloader() {
     var preload = document.querySelector('.preloader');
     var site = document.querySelector('.site-wrapper');
-    console.log('sdfsd');
     if (!preload || !site) {
         return;
     }
-    console.log('sdfsd');
     site.style.opacity = '1';
     setTimeout(function () { return (preload.style.transform = 'translate(0, 100%)'); }, 3000);
     setTimeout(function () { return (preload.style.display = 'none'); }, 4000);
